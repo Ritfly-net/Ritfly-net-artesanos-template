@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARTESANOS — Calzado artesanal de cuero</title>
+    <meta
+        name="description"
+        content="Plantilla conceptual para ARTESANOS: calzado artesanal de cuero, elegante y accesible."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="announcement">
+        <p>Calzado artesanal · Hecho en Guatemala · Materiales de alta calidad</p>
+    </div>
+
+    <header class="site-header" data-header>
+        <div class="shell header-inner">
+            <a class="brand" href="#inicio" aria-label="ARTESANOS — Inicio">
+                <span class="brand-mark">
+                    <img src="assets/artesanos-logo.png" alt="ARTESANOS">
+                </span>
+                <span class="brand-name">ARTESANOS</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Abrir menú</span>
+            </button>
+
+            <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+                <a href="#colecciones">Colecciones</a>
+                <a href="#tienda">Tienda</a>
+                <a href="#oficio">Nuestro oficio</a>
+                <a href="#historia">Historia</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button" type="button" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="6.75"></circle>
+                        <path d="m16.25 16.25 4 4"></path>
+                    </svg>
+                </button>
+
+                <a class="text-action" href="#">Cuenta</a>
+
+                <a class="cart-action" href="#">
+                    Carrito <span>0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <div class="hero-copy">
+                <div class="hero-copy-inner" data-reveal>
+                    <span class="eyebrow">CALZADO ARTESANAL DE CUERO</span>
+                    <h1>Hecho con oficio.<br>Diseñado para durar.</h1>
+                    <p class="hero-lede">
+                        Materiales de alta calidad, trabajo artesanal y diseños que acompañan
+                        cada paso. Elegancia auténtica al alcance de todos.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="#destacados">Explorar colección</a>
+                        <a class="link-arrow" href="#oficio">Conoce nuestro oficio <span>↘</span></a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div>
+                            <span>01</span>
+                            <p>Cuero seleccionado</p>
+                        </div>
+                        <div>
+                            <span>02</span>
+                            <p>Proceso artesanal</p>
+                        </div>
+                        <div>
+                            <span>03</span>
+                            <p>Diseño para el día a día</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-media">
+                <img
+                    src="assets/artesanos-shoe-01.png"
+                    alt="Zapatos artesanales de cuero color cognac"
+                    data-parallax
+                >
+                <div class="hero-caption">
+                    <span>COLECCIÓN</span>
+                    <strong>Esenciales de cuero</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="colecciones" class="section collections">
+            <div class="shell">
+                <header class="section-head" data-reveal>
+                    <div>
+                        <span class="eyebrow">ENCUENTRA TU ESTILO</span>
+                        <h2>Colecciones</h2>
+                    </div>
+                    <p>
+                        Una selección pensada para distintos momentos, manteniendo la misma
+                        atención por el material y el detalle.
+                    </p>
+                </header>
+
+                <div class="category-grid">
+                    <a class="category-card category-card-wide" href="#" data-reveal>
+                        <img src="assets/artesanos-shoe-02.png" alt="">
+                        <div class="category-overlay"></div>
+                        <div class="category-content">
+                            <span>01</span>
+                            <h3>Formales</h3>
+                            <p>Oxford, Derby y siluetas clásicas.</p>
+                            <strong>Descubrir</strong>
+                        </div>
+                    </a>
+
+                    <a class="category-card" href="#" data-reveal>
+                        <img src="assets/artesanos-shoe-03.png" alt="">
+                        <div class="category-overlay"></div>
+                        <div class="category-content">
+                            <span>02</span>
+                            <h3>Casuales</h3>
+                            <p>Versatilidad con presencia.</p>
+                            <strong>Descubrir</strong>
+                        </div>
+                    </a>
+
+                    <a class="category-card" href="#" data-reveal>
+                        <img src="assets/artesanos-shoe-01.png" alt="">
+                        <div class="category-overlay"></div>
+                        <div class="category-content">
+                            <span>03</span>
+                            <h3>Monk Strap</h3>
+                            <p>Una firma distinta para vestir.</p>
+                            <strong>Descubrir</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="destacados" class="section featured-products">
+            <div class="shell">
+                <header class="section-head products-heading" data-reveal>
+                    <div>
+                        <span class="eyebrow">SELECCIÓN ARTESANOS</span>
+                        <h2>Destacados</h2>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button type="button" class="carousel-button" data-prev aria-label="Anterior">←</button>
+                        <button type="button" class="carousel-button" data-next aria-label="Siguiente">→</button>
+                    </div>
+                </header>
+
+                <div
+                    class="product-carousel"
+                    data-carousel
+                    data-autoplay="5000"
+                    data-duration="750"
+                    data-easing="ease-in-out"
+                >
+                    <div class="product-track" data-track>
+                        <article class="product-card">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/artesanos-shoe-01.png" alt="Oxford Cap Toe de cuero">
+                                    <span class="product-badge">Nuevo</span>
+                                </figure>
+                                <div class="product-info">
+                                    <span class="product-type">Oxford</span>
+                                    <h3>Oxford Cap Toe</h3>
+                                    <p>Cuero · Hombre</p>
+                                    <span class="product-link">Ver producto</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/artesanos-shoe-02.png" alt="Derby Brogue de cuero">
+                                </figure>
+                                <div class="product-info">
+                                    <span class="product-type">Derby</span>
+                                    <h3>Derby Brogue</h3>
+                                    <p>Cuero · Hombre</p>
+                                    <span class="product-link">Ver producto</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/artesanos-shoe-03.png" alt="Double Monk Strap de cuero">
+                                    <span class="product-badge">Selección</span>
+                                </figure>
+                                <div class="product-info">
+                                    <span class="product-type">Monk Strap</span>
+                                    <h3>Double Monk</h3>
+                                    <p>Cuero · Hombre</p>
+                                    <span class="product-link">Ver producto</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/artesanos-shoe-02.png" alt="Oxford Brogue de cuero">
+                                </figure>
+                                <div class="product-info">
+                                    <span class="product-type">Oxford</span>
+                                    <h3>Oxford Brogue</h3>
+                                    <p>Cuero · Hombre</p>
+                                    <span class="product-link">Ver producto</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/artesanos-shoe-01.png" alt="Derby clásico de cuero">
+                                </figure>
+                                <div class="product-info">
+                                    <span class="product-type">Derby</span>
+                                    <h3>Derby Clásico</h3>
+                                    <p>Cuero · Hombre</p>
+                                    <span class="product-link">Ver producto</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/artesanos-shoe-03.png" alt="Single Monk Strap de cuero">
+                                </figure>
+                                <div class="product-info">
+                                    <span class="product-type">Monk Strap</span>
+                                    <h3>Single Monk</h3>
+                                    <p>Cuero · Hombre</p>
+                                    <span class="product-link">Ver producto</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="section-cta" data-reveal>
+                    <a class="button button-outline" href="#">Ver toda la colección</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="tienda" class="section shop-grid-section">
+            <div class="shell">
+                <header class="section-head shop-heading" data-reveal>
+                    <div>
+                        <span class="eyebrow">TIENDA</span>
+                        <h2>Calzado para cada ocasión.</h2>
+                    </div>
+                    <div class="shop-heading-copy">
+                        <p>
+                            Explora una selección de siluetas clásicas y contemporáneas,
+                            trabajadas con la misma atención al material y al detalle.
+                        </p>
+                        <a class="link-arrow" href="#">Ver toda la tienda <span>↘</span></a>
+                    </div>
+                </header>
+
+                <div class="shop-grid">
+                    <article class="shop-card" data-reveal>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/artesanos-shoe-01.png" alt="Oxford Cap Toe de cuero">
+                                <span class="shop-card-index">01</span>
+                            </figure>
+                            <div class="shop-card-meta">
+                                <div>
+                                    <span>Oxford</span>
+                                    <h3>Cap Toe Cognac</h3>
+                                </div>
+                                <span class="shop-card-action">Ver producto ↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="shop-card" data-reveal>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/artesanos-shoe-02.png" alt="Oxford Brogue de cuero">
+                                <span class="shop-card-index">02</span>
+                            </figure>
+                            <div class="shop-card-meta">
+                                <div>
+                                    <span>Oxford</span>
+                                    <h3>Brogue Clásico</h3>
+                                </div>
+                                <span class="shop-card-action">Ver producto ↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="shop-card" data-reveal>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/artesanos-shoe-03.png" alt="Double Monk Strap de cuero">
+                                <span class="shop-card-index">03</span>
+                            </figure>
+                            <div class="shop-card-meta">
+                                <div>
+                                    <span>Monk Strap</span>
+                                    <h3>Double Monk</h3>
+                                </div>
+                                <span class="shop-card-action">Ver producto ↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="shop-card" data-reveal>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/artesanos-shoe-01.png" alt="Derby de cuero">
+                                <span class="shop-card-index">04</span>
+                            </figure>
+                            <div class="shop-card-meta">
+                                <div>
+                                    <span>Derby</span>
+                                    <h3>Derby Cognac</h3>
+                                </div>
+                                <span class="shop-card-action">Ver producto ↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="shop-card" data-reveal>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/artesanos-shoe-02.png" alt="Zapato formal de cuero">
+                                <span class="shop-card-index">05</span>
+                            </figure>
+                            <div class="shop-card-meta">
+                                <div>
+                                    <span>Formal</span>
+                                    <h3>Oxford Puntera</h3>
+                                </div>
+                                <span class="shop-card-action">Ver producto ↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="shop-card" data-reveal>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/artesanos-shoe-03.png" alt="Monk Strap artesanal">
+                                <span class="shop-card-index">06</span>
+                            </figure>
+                            <div class="shop-card-meta">
+                                <div>
+                                    <span>Monk Strap</span>
+                                    <h3>Heritage Monk</h3>
+                                </div>
+                                <span class="shop-card-action">Ver producto ↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="shop-card" data-reveal>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/artesanos-shoe-01.png" alt="Zapato casual de cuero">
+                                <span class="shop-card-index">07</span>
+                            </figure>
+                            <div class="shop-card-meta">
+                                <div>
+                                    <span>Casual</span>
+                                    <h3>Derby Essential</h3>
+                                </div>
+                                <span class="shop-card-action">Ver producto ↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="shop-card" data-reveal>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/artesanos-shoe-02.png" alt="Zapato Brogue de cuero">
+                                <span class="shop-card-index">08</span>
+                            </figure>
+                            <div class="shop-card-meta">
+                                <div>
+                                    <span>Brogue</span>
+                                    <h3>Full Brogue</h3>
+                                </div>
+                                <span class="shop-card-action">Ver producto ↗</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="section-cta" data-reveal>
+                    <a class="button button-dark" href="#">Explorar todos los productos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="oficio" class="craft-story">
+            <div class="craft-media">
+                <img src="assets/artesanos-shoe-02.png" alt="Detalle de calzado artesanal de cuero">
+            </div>
+
+            <div class="craft-copy">
+                <div data-reveal>
+                    <span class="eyebrow eyebrow-light">NUESTRO OFICIO</span>
+                    <h2>La diferencia está en los detalles.</h2>
+                    <p>
+                        Cada par nace de la combinación entre material, técnica y criterio.
+                        No se trata de hacer más: se trata de hacer mejor.
+                    </p>
+                    <p>
+                        ARTESANOS apuesta por calzado de cuero con presencia, construido para
+                        acompañar la rutina sin renunciar a la elegancia.
+                    </p>
+                    <a class="button button-light" href="#">Conocer el proceso artesanal</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="historia" class="section editorial">
+            <div class="shell editorial-grid">
+                <div class="editorial-copy" data-reveal>
+                    <span class="eyebrow">UNA MARCA CON IDENTIDAD</span>
+                    <h2>Elegancia que no necesita exagerar.</h2>
+                    <p>
+                        Piezas honestas, materiales protagonistas y siluetas capaces de hablar
+                        por sí mismas. Nuestra idea de calidad empieza en lo que se ve y termina
+                        en lo que se siente al usarlas.
+                    </p>
+                    <a class="link-arrow" href="#">Nuestra historia <span>↘</span></a>
+                </div>
+
+                <div class="editorial-image" data-reveal>
+                    <img src="assets/artesanos-shoe-03.png" alt="Calzado ARTESANOS en uso">
+                </div>
+            </div>
+        </section>
+
+        <section class="values">
+            <div class="shell values-grid">
+                <article data-reveal>
+                    <span>01</span>
+                    <h3>Materiales</h3>
+                    <p>Cuero y materiales seleccionados para ofrecer presencia y durabilidad.</p>
+                </article>
+
+                <article data-reveal>
+                    <span>02</span>
+                    <h3>Artesanía</h3>
+                    <p>Atención al detalle y un proceso que conserva el valor de lo bien hecho.</p>
+                </article>
+
+                <article data-reveal>
+                    <span>03</span>
+                    <h3>Accesibilidad</h3>
+                    <p>Calidad artesanal pensada para estar al alcance de más personas.</p>
+                </article>
+
+                <article data-reveal>
+                    <span>04</span>
+                    <h3>Estilo</h3>
+                    <p>Diseños sobrios que funcionan hoy y siguen funcionando mañana.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="closing-banner">
+            <img src="assets/artesanos-shoe-01.png" alt="">
+            <div class="closing-overlay"></div>
+            <div class="shell closing-content" data-reveal>
+                <span class="eyebrow eyebrow-light">ARTESANOS</span>
+                <h2>Tu siguiente par empieza aquí.</h2>
+                <a class="button button-light" href="#">Comprar calzado</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-top">
+            <div class="footer-brand">
+                <span class="footer-logo">
+                    <img src="assets/artesanos-logo.png" alt="ARTESANOS">
+                </span>
+                <div>
+                    <strong>ARTESANOS</strong>
+                    <p>Calzado artesanal de cuero para hombre.</p>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Comprar</h3>
+                <a href="#">Zapatos formales</a>
+                <a href="#">Zapatos casuales</a>
+                <a href="#">Botas y botines</a>
+                <a href="#">Tenis de cuero</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>ARTESANOS</h3>
+                <a href="#">Nuestra historia</a>
+                <a href="#">Proceso artesanal</a>
+                <a href="#">Guía de estilos</a>
+                <a href="#">Cuidado del cuero</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Ayuda</h3>
+                <a href="#">Guía de tallas</a>
+                <a href="#">Envíos y entregas</a>
+                <a href="#">Cambios y devoluciones</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+
+        <div class="shell footer-bottom">
+            <span>© 2026 ARTESANOS</span>
+            <div>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
