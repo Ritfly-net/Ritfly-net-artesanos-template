@@ -38,7 +38,7 @@
             </button>
 
             <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
-                <a href="#colecciones">Colecciones</a>
+                <a href="#personalizado">Calzado personalizado</a>
                 <a href="#tienda">Tienda</a>
                 <a href="#oficio">Nuestro oficio</a>
                 <a href="#historia">Historia</a>
@@ -96,7 +96,7 @@
 
             <div class="hero-media">
                 <img
-                    src="assets/artesanos-shoe-01.png"
+                    src="assets/artesanos-shoe-02.png"
                     alt="Zapatos artesanales de cuero color cognac"
                     data-parallax
                 >
@@ -107,62 +107,66 @@
             </div>
         </section>
 
-        <section id="colecciones" class="section collections">
-            <div class="shell">
-                <header class="section-head" data-reveal>
-                    <div>
-                        <span class="eyebrow">ENCUENTRA TU ESTILO</span>
-                        <h2>Colecciones</h2>
-                    </div>
-                    <p>
-                        Una selección pensada para distintos momentos, manteniendo la misma
-                        atención por el material y el detalle.
+
+        <section id="personalizado" class="section custom-shoes">
+            <div class="shell custom-shoes-grid">
+                <div class="custom-shoes-copy" data-reveal>
+                    <span class="eyebrow">CALZADO PERSONALIZADO</span>
+                    <h2>Un par hecho más tuyo.</h2>
+                    <p class="custom-shoes-lede">
+                        Personaliza detalles clave de tu calzado y crea una combinación que se adapte
+                        mejor a tu estilo. El sistema permitirá elegir acabados visuales y ajustes del modelo
+                        antes de solicitar tu par.
                     </p>
-                </header>
 
-                <div class="category-grid">
-                    <a class="category-card category-card-wide" href="#" data-reveal>
-                        <img src="assets/artesanos-shoe-02.png" alt="">
-                        <div class="category-overlay"></div>
-                        <div class="category-content">
+                    <div class="custom-options" aria-label="Opciones de personalización">
+                        <div>
                             <span>01</span>
-                            <h3>Formales</h3>
-                            <p>Oxford, Derby y siluetas clásicas.</p>
-                            <strong>Descubrir</strong>
+                            <strong>Color del cuero</strong>
                         </div>
-                    </a>
-
-                    <a class="category-card" href="#" data-reveal>
-                        <img src="assets/artesanos-shoe-03.png" alt="">
-                        <div class="category-overlay"></div>
-                        <div class="category-content">
+                        <div>
                             <span>02</span>
-                            <h3>Casuales</h3>
-                            <p>Versatilidad con presencia.</p>
-                            <strong>Descubrir</strong>
+                            <strong>Altura del talón</strong>
                         </div>
-                    </a>
-
-                    <a class="category-card" href="#" data-reveal>
-                        <img src="assets/artesanos-shoe-01.png" alt="">
-                        <div class="category-overlay"></div>
-                        <div class="category-content">
+                        <div>
                             <span>03</span>
-                            <h3>Monk Strap</h3>
-                            <p>Una firma distinta para vestir.</p>
-                            <strong>Descubrir</strong>
+                            <strong>Altura del empeine</strong>
                         </div>
-                    </a>
+                        <div>
+                            <span>04</span>
+                            <strong>Acabados y detalles</strong>
+                        </div>
+                    </div>
+
+                    <a class="button button-dark" href="#">Conocer la personalización</a>
+                </div>
+
+                <div class="custom-shoes-gallery" data-reveal>
+                    <figure class="custom-shoes-main">
+                        <img src="assets/artesanos-shoe-03.png" alt="Zapato de cuero personalizable ARTESANOS">
+                        <figcaption>
+                            <span>01</span>
+                            <strong>Elige la base</strong>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="custom-shoes-detail">
+                        <img src="assets/artesanos-shoe-02.png" alt="Detalle de zapato artesanal de cuero">
+                        <figcaption>
+                            <span>02</span>
+                            <strong>Define los detalles</strong>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
-        <section id="destacados" class="section featured-products">
+        <section id="destacados" class="section featured-products featured-categories">
             <div class="shell">
                 <header class="section-head products-heading" data-reveal>
                     <div>
-                        <span class="eyebrow">SELECCIÓN ARTESANOS</span>
-                        <h2>Destacados</h2>
+                        <span class="eyebrow">EXPLORA ARTESANOS</span>
+                        <h2>Categorías destacadas</h2>
                     </div>
 
                     <div class="carousel-controls">
@@ -178,89 +182,61 @@
                     data-duration="750"
                     data-easing="ease-in-out"
                 >
-                    <div class="product-track" data-track>
-                        <article class="product-card">
+                    <div class="product-track category-track" data-track>
+                        <article class="product-card category-product-card">
                             <a href="#">
                                 <figure>
-                                    <img src="assets/artesanos-shoe-01.png" alt="Oxford Cap Toe de cuero">
-                                    <span class="product-badge">Nuevo</span>
+                                    <img src="assets/artesanos-shoe-02.png" alt="Zapatos formales para hombre">
+                                    <span class="product-badge">Formal</span>
                                 </figure>
                                 <div class="product-info">
-                                    <span class="product-type">Oxford</span>
-                                    <h3>Oxford Cap Toe</h3>
-                                    <p>Cuero · Hombre</p>
-                                    <span class="product-link">Ver producto</span>
+                                    <span class="product-type">Categoría</span>
+                                    <h3>Zapatos formales</h3>
+                                    <p>Oxford, Derby, Monk Strap y siluetas clásicas.</p>
+                                    <span class="product-link">Explorar categoría</span>
                                 </div>
                             </a>
                         </article>
 
-                        <article class="product-card">
+                        <article class="product-card category-product-card">
                             <a href="#">
                                 <figure>
-                                    <img src="assets/artesanos-shoe-02.png" alt="Derby Brogue de cuero">
+                                    <img src="assets/artesanos-shoe-03.png" alt="Zapatos casuales para hombre">
                                 </figure>
                                 <div class="product-info">
-                                    <span class="product-type">Derby</span>
-                                    <h3>Derby Brogue</h3>
-                                    <p>Cuero · Hombre</p>
-                                    <span class="product-link">Ver producto</span>
+                                    <span class="product-type">Categoría</span>
+                                    <h3>Zapatos casuales</h3>
+                                    <p>Diseños versátiles para elevar el día a día.</p>
+                                    <span class="product-link">Explorar categoría</span>
                                 </div>
                             </a>
                         </article>
 
-                        <article class="product-card">
+                        <article class="product-card category-product-card">
                             <a href="#">
                                 <figure>
-                                    <img src="assets/artesanos-shoe-03.png" alt="Double Monk Strap de cuero">
-                                    <span class="product-badge">Selección</span>
+                                    <img src="assets/artesanos-shoe-01.png" alt="Botas y botines de cuero para hombre">
+                                    <span class="product-badge">Cuero</span>
                                 </figure>
                                 <div class="product-info">
-                                    <span class="product-type">Monk Strap</span>
-                                    <h3>Double Monk</h3>
-                                    <p>Cuero · Hombre</p>
-                                    <span class="product-link">Ver producto</span>
+                                    <span class="product-type">Categoría</span>
+                                    <h3>Botas y botines</h3>
+                                    <p>Construcción firme, cuero y carácter.</p>
+                                    <span class="product-link">Explorar categoría</span>
                                 </div>
                             </a>
                         </article>
 
-                        <article class="product-card">
+                        <article class="product-card category-product-card">
                             <a href="#">
                                 <figure>
-                                    <img src="assets/artesanos-shoe-02.png" alt="Oxford Brogue de cuero">
+                                    <img src="assets/artesanos-shoe-03.png" alt="Tenis de cuero para hombre">
                                 </figure>
                                 <div class="product-info">
-                                    <span class="product-type">Oxford</span>
-                                    <h3>Oxford Brogue</h3>
-                                    <p>Cuero · Hombre</p>
-                                    <span class="product-link">Ver producto</span>
-                                </div>
-                            </a>
-                        </article>
-
-                        <article class="product-card">
-                            <a href="#">
-                                <figure>
-                                    <img src="assets/artesanos-shoe-01.png" alt="Derby clásico de cuero">
-                                </figure>
-                                <div class="product-info">
-                                    <span class="product-type">Derby</span>
-                                    <h3>Derby Clásico</h3>
-                                    <p>Cuero · Hombre</p>
-                                    <span class="product-link">Ver producto</span>
-                                </div>
-                            </a>
-                        </article>
-
-                        <article class="product-card">
-                            <a href="#">
-                                <figure>
-                                    <img src="assets/artesanos-shoe-03.png" alt="Single Monk Strap de cuero">
-                                </figure>
-                                <div class="product-info">
-                                    <span class="product-type">Monk Strap</span>
-                                    <h3>Single Monk</h3>
-                                    <p>Cuero · Hombre</p>
-                                    <span class="product-link">Ver producto</span>
+                                    <span class="product-type">Categoría</span>
+                                    <h3>Tenis de cuero</h3>
+                                    <p>Una lectura más relajada del trabajo artesanal.</p>
+                                    <span class="product-link">Explorar categoría</span>
                                 </div>
                             </a>
                         </article>
@@ -268,7 +244,7 @@
                 </div>
 
                 <div class="section-cta" data-reveal>
-                    <a class="button button-outline" href="#">Ver toda la colección</a>
+                    <a class="button button-outline" href="#tienda">Ver tienda</a>
                 </div>
             </div>
         </section>
