@@ -29,6 +29,78 @@
         });
     }
 
+    const heroSlider = document.querySelector('[data-hero-slider]');
+
+    if (heroSlider) {
+        const slides = [...heroSlider.querySelectorAll('[data-hero-slide]')];
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const interval = Math.max(
+            2500,
+            Number.parseInt(heroSlider.dataset.interval || '4800', 10)
+        );
+
+        let activeIndex = Math.max(
+            0,
+            slides.findIndex((slide) => slide.classList.contains('is-active'))
+        );
+        let heroTimer = null;
+
+        const showSlide = (nextIndex) => {
+            if (slides.length < 2 || nextIndex === activeIndex) {
+                return;
+            }
+
+            const current = slides[activeIndex];
+            const next = slides[nextIndex];
+
+            current.classList.remove('is-active');
+            current.setAttribute('aria-hidden', 'true');
+
+            /*
+             * Force a reflow so the subtle zoom restarts each time
+             * a slide becomes active again.
+             */
+            void next.offsetWidth;
+
+            next.classList.add('is-active');
+            next.setAttribute('aria-hidden', 'false');
+
+            activeIndex = nextIndex;
+        };
+
+        const nextSlide = () => {
+            showSlide((activeIndex + 1) % slides.length);
+        };
+
+        const startHeroSlider = () => {
+            if (reducedMotion || slides.length < 2 || heroTimer !== null) {
+                return;
+            }
+
+            heroTimer = window.setInterval(nextSlide, interval);
+        };
+
+        const stopHeroSlider = () => {
+            if (heroTimer === null) {
+                return;
+            }
+
+            window.clearInterval(heroTimer);
+            heroTimer = null;
+        };
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopHeroSlider();
+                return;
+            }
+
+            startHeroSlider();
+        });
+
+        startHeroSlider();
+    }
+
     const revealItems = document.querySelectorAll('[data-reveal]');
 
     if ('IntersectionObserver' in window) {
@@ -49,31 +121,6 @@
         revealItems.forEach((item) => observer.observe(item));
     } else {
         revealItems.forEach((item) => item.classList.add('is-visible'));
-    }
-
-    const parallax = document.querySelector('[data-parallax]');
-
-    if (parallax && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        let ticking = false;
-
-        const updateParallax = () => {
-            const media = parallax.parentElement;
-            const rect = media.getBoundingClientRect();
-            const viewport = window.innerHeight;
-            const progress = Math.max(-1, Math.min(1, (rect.top + rect.height / 2 - viewport / 2) / viewport));
-
-            parallax.style.transform = `translateY(${(-4 + progress * 3).toFixed(2)}%) scale(1.02)`;
-            ticking = false;
-        };
-
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                requestAnimationFrame(updateParallax);
-                ticking = true;
-            }
-        }, { passive: true });
-
-        updateParallax();
     }
 
     const carousel = document.querySelector('[data-carousel]');
