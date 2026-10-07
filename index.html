@@ -129,143 +129,206 @@
         </section>
 
 
-        <section id="personalizado" class="section custom-shoes">
-            <div class="shell custom-shoes-grid">
-                <div class="custom-shoes-copy" data-reveal>
-                    <span class="eyebrow">CALZADO PERSONALIZADO</span>
-                    <h2>Un par hecho más tuyo.</h2>
-                    <p class="custom-shoes-lede">
-                        Personaliza detalles clave de tu calzado y crea una combinación que se adapte
-                        mejor a tu estilo. El sistema permitirá elegir acabados visuales y ajustes del modelo
-                        antes de solicitar tu par.
-                    </p>
+        <section id="personalizado" class="personalization-flow">
+            <div class="personalization-steps">
+                <div class="shell">
+                    <header class="personalization-heading" data-reveal>
+                        <span class="eyebrow">DISEÑA TU PAR</span>
+                        <h2>Así funciona.</h2>
+                    </header>
 
-                    <div class="custom-options" aria-label="Opciones de personalización">
-                        <div>
-                            <span>01</span>
-                            <strong>Color del cuero</strong>
-                        </div>
-                        <div>
-                            <span>02</span>
-                            <strong>Altura del talón</strong>
-                        </div>
-                        <div>
-                            <span>03</span>
-                            <strong>Altura del empeine</strong>
-                        </div>
-                        <div>
-                            <span>04</span>
-                            <strong>Acabados y detalles</strong>
-                        </div>
+                    <div class="personalization-step-grid">
+                        <article data-reveal>
+                            <span class="step-icon" aria-hidden="true">
+                                <svg viewBox="0 0 64 64">
+                                    <path d="M12 39c8-2 13-7 17-18 4 7 9 10 18 12 4 1 7 4 7 8v5H12Z"></path>
+                                    <path d="M19 46v5h30v-5"></path>
+                                </svg>
+                            </span>
+                            <span class="step-number">01</span>
+                            <h3>Elige tu estilo</h3>
+                            <p>Parte de una silueta que conecte con tu forma de vestir.</p>
+                        </article>
+
+                        <article data-reveal>
+                            <span class="step-icon" aria-hidden="true">
+                                <svg viewBox="0 0 64 64">
+                                    <path d="M16 17h32v30H16z"></path>
+                                    <path d="M16 29h32M28 17v30"></path>
+                                    <circle cx="42" cy="39" r="4"></circle>
+                                </svg>
+                            </span>
+                            <span class="step-number">02</span>
+                            <h3>Personaliza los detalles</h3>
+                            <p>Color, cuero, acabados, talón, empeine y otros elementos del par.</p>
+                        </article>
+
+                        <article data-reveal>
+                            <span class="step-icon" aria-hidden="true">
+                                <svg viewBox="0 0 64 64">
+                                    <path d="M17 43h30"></path>
+                                    <path d="M22 43V27c0-6 4-10 10-10s10 4 10 10v16"></path>
+                                    <path d="M25 31h14"></path>
+                                    <path d="M28 51h8"></path>
+                                </svg>
+                            </span>
+                            <span class="step-number">03</span>
+                            <h3>Solicita tu par</h3>
+                            <p>Revisa tu combinación y envíala para iniciar el proceso artesanal.</p>
+                        </article>
                     </div>
 
-                    <a class="button button-dark" href="#">Conocer la personalización</a>
+                    <div class="personalization-steps-cta" data-reveal>
+                        <a class="button button-outline" href="#">Comenzar a diseñar</a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="custom-shoes-gallery" data-reveal>
-                    <figure class="custom-shoes-main">
-                        <img src="assets/artesanos-shoe-03.png" alt="Zapato de cuero personalizable ARTESANOS">
-                        <figcaption>
-                            <span>01</span>
-                            <strong>Elige la base</strong>
-                        </figcaption>
-                    </figure>
+            <div class="personalization-story">
+                <div class="shell personalization-story-grid">
+                    <div class="personalization-story-copy" data-reveal>
+                        <span class="eyebrow">PERSONALIZACIÓN ARTESANOS</span>
+                        <h2>Hazlo realmente tuyo.</h2>
+                        <p>
+                            Diseña un par que parta de nuestros modelos y lleve tus decisiones.
+                            Elige materiales, colores y proporciones antes de solicitarlo.
+                        </p>
+                        <p>
+                            El configurador te permitirá visualizar cada cambio de forma clara,
+                            manteniendo el carácter artesanal del producto.
+                        </p>
+                        <a class="button button-dark" href="#">Diseñar mi par</a>
+                    </div>
 
-                    <figure class="custom-shoes-detail">
-                        <img src="assets/artesanos-shoe-02.png" alt="Detalle de zapato artesanal de cuero">
-                        <figcaption>
-                            <span>02</span>
-                            <strong>Define los detalles</strong>
-                        </figcaption>
-                    </figure>
+                    <div class="personalization-visual" data-reveal>
+                        <div class="personalization-visual-label">
+                            <span>Explora las opciones</span>
+                            <strong>Personaliza cada detalle</strong>
+                        </div>
+
+                        <img
+                            class="personalization-shoe"
+                            src="assets/zapato-hotpoints.png"
+                            alt="Zapato ARTESANOS personalizable con puntos interactivos"
+                        >
+
+                        <button
+                            class="shoe-hotpoint shoe-hotpoint--material"
+                            type="button"
+                            aria-label="Tipo de cuero"
+                        >
+                            <span class="shoe-hotpoint-dot"></span>
+                            <span class="shoe-hotpoint-tooltip">
+                                <strong>Tipo de cuero</strong>
+                                <small>Elige entre distintas pieles, texturas y acabados.</small>
+                            </span>
+                        </button>
+
+                        <button
+                            class="shoe-hotpoint shoe-hotpoint--laces"
+                            type="button"
+                            aria-label="Cordones"
+                        >
+                            <span class="shoe-hotpoint-dot"></span>
+                            <span class="shoe-hotpoint-tooltip">
+                                <strong>Cordones</strong>
+                                <small>Combina color y estilo con el resto del calzado.</small>
+                            </span>
+                        </button>
+
+                        <button
+                            class="shoe-hotpoint shoe-hotpoint--color"
+                            type="button"
+                            aria-label="Color"
+                        >
+                            <span class="shoe-hotpoint-dot"></span>
+                            <span class="shoe-hotpoint-tooltip">
+                                <strong>Color</strong>
+                                <small>Personaliza el tono principal del cuero.</small>
+                            </span>
+                        </button>
+
+                        <button
+                            class="shoe-hotpoint shoe-hotpoint--finish"
+                            type="button"
+                            aria-label="Acabado"
+                        >
+                            <span class="shoe-hotpoint-dot"></span>
+                            <span class="shoe-hotpoint-tooltip">
+                                <strong>Acabado</strong>
+                                <small>Define brillo, alisado y detalles de la superficie.</small>
+                            </span>
+                        </button>
+
+                        <button
+                            class="shoe-hotpoint shoe-hotpoint--sole"
+                            type="button"
+                            aria-label="Suela"
+                        >
+                            <span class="shoe-hotpoint-dot"></span>
+                            <span class="shoe-hotpoint-tooltip shoe-hotpoint-tooltip--up">
+                                <strong>Suela</strong>
+                                <small>Selecciona material, grosor y estilo de la base.</small>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="destacados" class="section featured-products featured-categories">
+        <section id="destacados" class="style-selector">
             <div class="shell">
-                <header class="section-head products-heading" data-reveal>
-                    <div>
-                        <span class="eyebrow">EXPLORA ARTESANOS</span>
-                        <h2>Categorías destacadas</h2>
-                    </div>
-
-                    <div class="carousel-controls">
-                        <button type="button" class="carousel-button" data-prev aria-label="Anterior">←</button>
-                        <button type="button" class="carousel-button" data-next aria-label="Siguiente">→</button>
-                    </div>
+                <header class="style-selector-heading" data-reveal>
+                    <span class="eyebrow">ELIGE UNA BASE</span>
+                    <h2>Encuentra tu estilo.</h2>
                 </header>
 
-                <div
-                    class="product-carousel"
-                    data-carousel
-                    data-autoplay="5000"
-                    data-duration="750"
-                    data-easing="ease-in-out"
-                >
-                    <div class="product-track category-track" data-track>
-                        <article class="product-card category-product-card">
-                            <a href="#">
-                                <figure>
-                                    <img src="assets/artesanos-shoe-02.png" alt="Zapatos formales para hombre">
-                                    <span class="product-badge">Formal</span>
-                                </figure>
-                                <div class="product-info">
-                                    <span class="product-type">Categoría</span>
-                                    <h3>Zapatos formales</h3>
-                                    <p>Oxford, Derby, Monk Strap y siluetas clásicas.</p>
-                                    <span class="product-link">Explorar categoría</span>
-                                </div>
-                            </a>
-                        </article>
+                <div class="style-selector-track" aria-label="Categorías de calzado">
+                    <a class="style-card" href="#" data-reveal>
+                        <figure>
+                            <img src="assets/artesanos-shoe-02.png" alt="Oxford">
+                        </figure>
+                        <span>Oxford</span>
+                    </a>
 
-                        <article class="product-card category-product-card">
-                            <a href="#">
-                                <figure>
-                                    <img src="assets/artesanos-shoe-03.png" alt="Zapatos casuales para hombre">
-                                </figure>
-                                <div class="product-info">
-                                    <span class="product-type">Categoría</span>
-                                    <h3>Zapatos casuales</h3>
-                                    <p>Diseños versátiles para elevar el día a día.</p>
-                                    <span class="product-link">Explorar categoría</span>
-                                </div>
-                            </a>
-                        </article>
+                    <a class="style-card" href="#" data-reveal>
+                        <figure>
+                            <img src="assets/artesanos-shoe-01.png" alt="Derby">
+                        </figure>
+                        <span>Derby</span>
+                    </a>
 
-                        <article class="product-card category-product-card">
-                            <a href="#">
-                                <figure>
-                                    <img src="assets/artesanos-shoe-01.png" alt="Botas y botines de cuero para hombre">
-                                    <span class="product-badge">Cuero</span>
-                                </figure>
-                                <div class="product-info">
-                                    <span class="product-type">Categoría</span>
-                                    <h3>Botas y botines</h3>
-                                    <p>Construcción firme, cuero y carácter.</p>
-                                    <span class="product-link">Explorar categoría</span>
-                                </div>
-                            </a>
-                        </article>
+                    <a class="style-card" href="#" data-reveal>
+                        <figure>
+                            <img src="assets/artesanos-shoe-03.png" alt="Monk Strap">
+                        </figure>
+                        <span>Monk Strap</span>
+                    </a>
 
-                        <article class="product-card category-product-card">
-                            <a href="#">
-                                <figure>
-                                    <img src="assets/artesanos-shoe-03.png" alt="Tenis de cuero para hombre">
-                                </figure>
-                                <div class="product-info">
-                                    <span class="product-type">Categoría</span>
-                                    <h3>Tenis de cuero</h3>
-                                    <p>Una lectura más relajada del trabajo artesanal.</p>
-                                    <span class="product-link">Explorar categoría</span>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
+                    <a class="style-card" href="#" data-reveal>
+                        <figure>
+                            <img src="assets/artesanos-shoe-01.png" alt="Loafers">
+                        </figure>
+                        <span>Loafers</span>
+                    </a>
+
+                    <a class="style-card" href="#" data-reveal>
+                        <figure>
+                            <img src="assets/artesanos-shoe-02.png" alt="Botas">
+                        </figure>
+                        <span>Botas</span>
+                    </a>
+
+                    <a class="style-card" href="#" data-reveal>
+                        <figure>
+                            <img src="assets/artesanos-shoe-03.png" alt="Tenis de cuero">
+                        </figure>
+                        <span>Tenis de cuero</span>
+                    </a>
                 </div>
 
-                <div class="section-cta" data-reveal>
-                    <a class="button button-outline" href="#tienda">Ver tienda</a>
+                <div class="style-selector-cta" data-reveal>
+                    <a class="button button-outline" href="#tienda">Ver todos los estilos</a>
                 </div>
             </div>
         </section>
